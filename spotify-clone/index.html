@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MR_Music</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Inline SVG sprite -->
+  <div id="svg-sprite" hidden>
+    <!-- icons are loaded from assets/img/icons.svg by JS to keep HTML clean -->
+  </div>
+
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">♪</div>
+        <div class="title">Spotify lite</div>
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav-item active">
+          <svg class="icon"><use href="#icon-home"></use></svg>
+          Home
+        </a>
+        <a href="#" class="nav-item">
+          <svg class="icon"><use href="#icon-search"></use></svg>
+          Search
+        </a>
+        <a href="#" class="nav-item">
+          <svg class="icon"><use href="#icon-library"></use></svg>
+          Your Library
+        </a>
+      </nav>
+
+      <div class="playlists">
+        <h3>Playlists</h3>
+        <ul id="playlist-list"></ul>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <input id="search" type="search" placeholder="Search songs, artists, albums..." />
+        <div class="user">
+          <div class="avatar" title="Guest">
+            <img src="https://cdn.pixabay.com/photo/2016/10/22/00/15/spotify-1759471_1280.jpg">
+          </div>
+        </div>
+      </header>
+
+      <section class="shelf" id="new-releases">
+        <h2>New Releases</h2>
+        <div class="cards" id="new-release-cards"></div>
+      </section>
+
+      <section class="shelf" id="made-for-you">
+        <h2>Made For You</h2>
+        <div class="cards" id="made-for-you-cards"></div>
+      </section>
+
+      <section class="queue" id="queue">
+        <h3>Queue</h3>
+        <ul id="queue-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <footer class="player">
+    <div class="track-meta">
+      <div class="cover"></div>
+      <div class="info">
+        <div class="title" id="player-title">
+          <link href="../spotify-clone/assets/audio/">
+        </div>
+        <div class="artist" id="player-artist">—</div>
+      </div>
+      <button class="like" id="like-btn" title="Like">
+        <svg class="icon"><use href="#icon-like"></use></svg>
+      </button>
+    </div>
+
+    <div class="controls">
+      <button id="prev-btn" class="btn"><svg class="icon"><use href="#icon-prev"></use></svg></button>
+      <button id="play-btn" class="btn primary"><svg class="icon"><use href="#icon-play"></use></svg></button>
+      <button id="next-btn" class="btn"><svg class="icon"><use href="#icon-next"></use></svg></button>
+
+      <div class="timeline">
+        <span id="current-time">0:00</span>
+        <input id="seek" type="range" min="0" max="100" step="1" value="0"/>
+        <span id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="extras">
+      <button id="shuffle-btn" class="btn"><svg class="icon"><use href="#icon-shuffle"></use></svg></button>
+      <button id="repeat-btn" class="btn"><svg class="icon"><use href="#icon-repeat"></use></svg></button>
+      <div class="volume">
+        <input id="volume" type="range" min="0" max="1" step="0.01" value="0.8"/>
+      </div>
+    </div>
+
+    <audio id="audio"></audio>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
