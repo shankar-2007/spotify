@@ -26,13 +26,21 @@
     { id: 't12', title: 'Reawaker', artist: 'Lisa', src: 'assets/audio/reawaker.mp3', liked: false },
     { id: 't13', title: 'royalty', artist: 'Neoni', src: 'assets/audio/royalty.mp3', liked: false },
     { id: 't14', title: 'Mortals', artist: 'Warriyo', src: 'assets/audio/Mortals.mp3', liked: false },
+    { id: 't15', title: 'Yedhalo oka Mounam', artist: 'Dhanush', src: 'assets/audio/3 (Telugu) - Yedhalo Oka Mounam Video ｜ Dhanush, Shruti ｜ Anirudh.mp3', liked: false },
+    { id: 't16', title: 'Nee Paata Madhuram', artist: 'Dhanush', src: 'assets/audio/3 (Telugu) - Nee Paata Madhuram Video ｜ Dhanush, Shruti ｜ Anirudh.mp3', liked: false },
+    { id: 't17', title: 'Kannuladha', artist: 'Dhanush', src: 'assets/audio/3 (Telugu) - Kannuladha Video ｜ Dhanush, Shruti ｜ Anirudh.mp3', liked: false },
+    { id: 't18', title: 'Nee Choopule', artist: 'ram', src: 'assets/audio/neeChoopule Full Song With TeluguLyrics - EndukantePremanta Movie ｜Ram,Tamannah｜ Maa Paata Mee Nota.mp3', liked: false },
+    { id: 't19', title: 'Adangaatha Asuran', artist: 'Dhanush', src: 'assets/audio/Adangaatha Asuran - Video Song  RAAYAN  Dhanush  Sun Pictures  A.R. Rahman  Prabhu Deva.mp3', liked: false },
+    { id: 't20', title: 'Thala Vanchi Eragade', artist: 'Dhanush', src: 'assets/audio/Thala Vanchi Eragade - Video Song  RAAYAN  Dhanush  Sun Pictures  A.R. Rahman.mp3', liked: false },
+    { id: 't21', title: 'Chal chalo chalo', artist: 'allu arjun', src: 'assets/audio/Chal Chalo Chalo Full Video Song  So Satyamurthy Video Songs  Allu Arjun, Samantha.mp3', liked: false },
+  ];
   ];
 
   const playlists = [
     { id:'p1', name: 'Daily Mix 1', trackIds: ['t2','t3','t4']},
-    { id:'p1', name: 'Mikey Reddy', trackIds: ['t3','t8','t13']},
-    { id:'p2', name: 'Focus Flow', trackIds: ['t1','t5','t6']},
-    { id:'p3', name: 'Throwback Vibes', trackIds: ['t3','t14','t12']},
+    { id:'p1', name: 'Mikey Reddy', trackIds: ['t18','t20','t8']},
+    { id:'p2', name: 'telugu vibes', trackIds: ['t17','t15','t16','t18','t20','t21']},
+    { id:'p3', name: 'Throwback Vibes', trackIds: ['t5','t6','t14']},
     { id:'p3', name: 'Anime', trackIds: ['t12','t3','t13']},
   ];
 
