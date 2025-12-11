@@ -12,28 +12,27 @@
 
   // Mock data (you can replace with real API later)
   const tracks = [
-    { id: 't1', title: 'Senorita', artist: 'Shawn', src: 'assets/audio/senorita.mp3', liked: false },
+   { id: 't1', title: 'Senorita', artist: 'Shawn', src: 'assets/audio/senorita.mp3', liked: false },
     { id: 't2', title: 'Pink Venom', artist: 'BLACKPINK', src: 'assets/audio/pink venom.mp3', liked: false },
     { id: 't3', title: 'Bluebird', artist: 'Ikimonogakari',src: 'assets/audio/Blue-Bird.mp3', liked: false },
     { id: 't4', title: 'Fly Away', artist: 'TheFatRat', src: 'assets/audio/Fly Away.mp3', liked: false },
     { id: 't5', title: 'Blinding Lights', artist: 'The Weeknd', src: 'assets/audio/Blinding Lights.mp3', liked: false },
     { id: 't6', title: 'A Thousand Years', artist: 'Christina Perri', src: 'assets/audio/Christina Perri - A Thousand Years [Official Music Video].mp3', liked: false },
     { id: 't7', title: 'Dark Paradise', artist: 'Lana del rey', src: 'assets/audio/Dark Paradise.mp3', liked: false },
-    { id: 't8', title: 'Heartbreak Anniversary', artist: 'GIVEON',src: 'assets/audio/GIVĒON - Heartbreak Anniversary (Official Music Video).mp3', liked: false },
+    { id: 't8', title: 'Heartbreak Anniversary', artist: 'GIVEON',src: 'assets/audio/assets/audio/GIVĒON - Heartbreak Anniversary (Official Music Video).mp3', liked: false },
     { id: 't9', title: 'детство', artist: 'Rauf & Faik', src: 'assets/audio/Rauf & Faik — детство (Official video).mp3', liked: false },
-    { id: 't10', title: 'Favorite', artist: 'Isabel LaRosa', src: 'assets/audio/Isabel LaRosa - Favorite (Official Video).mp3', liked: false },
+    { id: 't10', title: 'Favorite', artist: 'Isabel LaRosa', src: 'audio/Isabel LaRosa - Favorite (Official Video).mp3', liked: false },
     { id: 't11', title: 'Childhood', artist: 'Rauf & Faik', src: 'assets/audio/Rauf Faik - детство (Official audio).mp3', liked: false },
     { id: 't12', title: 'Reawaker', artist: 'Lisa', src: 'assets/audio/reawaker.mp3', liked: false },
     { id: 't13', title: 'royalty', artist: 'Neoni', src: 'assets/audio/royalty.mp3', liked: false },
     { id: 't14', title: 'Mortals', artist: 'Warriyo', src: 'assets/audio/Mortals.mp3', liked: false },
-    { id: 't15', title: 'Yedhalo oka Mounam', artist: 'Dhanush', src: 'assets/audio/3 (Telugu) - Yedhalo Oka Mounam Video ｜ Dhanush, Shruti ｜ Anirudh.mp3', liked: false },
-    { id: 't16', title: 'Nee Paata Madhuram', artist: 'Dhanush', src: 'assets/audio/3 (Telugu) - Nee Paata Madhuram Video ｜ Dhanush, Shruti ｜ Anirudh.mp3', liked: false },
-    { id: 't17', title: 'Kannuladha', artist: 'Dhanush', src: 'assets/audio/3 (Telugu) - Kannuladha Video ｜ Dhanush, Shruti ｜ Anirudh.mp3', liked: false },
-    { id: 't18', title: 'Nee Choopule', artist: 'ram', src: 'assets/audio/neeChoopule Full Song With TeluguLyrics - EndukantePremanta Movie ｜Ram,Tamannah｜ Maa Paata Mee Nota.mp3', liked: false },
-    { id: 't19', title: 'Adangaatha Asuran', artist: 'Dhanush', src: 'assets/audio/Adangaatha Asuran - Video Song  RAAYAN  Dhanush  Sun Pictures  A.R. Rahman  Prabhu Deva.mp3', liked: false },
-    { id: 't20', title: 'Thala Vanchi Eragade', artist: 'Dhanush', src: 'assets/audio/Thala Vanchi Eragade - Video Song  RAAYAN  Dhanush  Sun Pictures  A.R. Rahman.mp3', liked: false },
-    { id: 't21', title: 'Chal chalo chalo', artist: 'allu arjun', src: 'assets/audio/Chal Chalo Chalo Full Video Song  So Satyamurthy Video Songs  Allu Arjun, Samantha.mp3', liked: false },
-  ];
+    { id: 't15', title: 'Yedhalo oka Mounam', artist: 'Warriyo', src: 'assets/audio/3 (Telugu) - Yedhalo Oka Mounam Video ｜ Dhanush, Shruti ｜ Anirudh.mp3', liked: false },
+    { id: 't16', title: 'Nee Paata Madhuram', artist: 'Warriyo', src: 'assets/audio/3 (Telugu) - Nee Paata Madhuram Video ｜ Dhanush, Shruti ｜ Anirudh.mp3', liked: false },
+    { id: 't17', title: 'Kannuladha', artist: 'Warriyo', src: 'assets/audio/3 (Telugu) - Kannuladha Video ｜ Dhanush, Shruti ｜ Anirudh.mp3', liked: false },
+    { id: 't18', title: 'Nee Choopule', artist: 'reddy', src: 'assets/audio/neeChoopule Full Song With TeluguLyrics - EndukantePremanta Movie ｜Ram,Tamannah｜ Maa Paata Mee Nota.mp3', liked: false },
+    { id: 't19', title: 'Adangaatha Asuran', artist: 'Warriyo', src: 'assets/audio/Adangaatha Asuran - Video Song  RAAYAN  Dhanush  Sun Pictures  A.R. Rahman  Prabhu Deva.mp3', liked: false },
+    { id: 't20', title: 'Thala Vanchi Eragade', artist: 'Warriyo', src: 'assets/audio/Thala Vanchi Eragade - Video Song  RAAYAN  Dhanush  Sun Pictures  A.R. Rahman.mp3', liked: false },
+    { id: 't21', title: 'Mortals', artist: 'Warriyo', src: 'assets/audio/Chal Chalo Chalo Full Video Song  So Satyamurthy Video Songs  Allu Arjun, Samantha.mp3', liked: false },
   ];
 
   const playlists = [
